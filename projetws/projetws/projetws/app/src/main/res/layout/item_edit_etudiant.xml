@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Edit Text for Nom -->
+    <EditText
+        android:id="@+id/et_nom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nom"
+        android:inputType="text" />
+
+    <!-- Edit Text for Prenom -->
+    <EditText
+        android:id="@+id/et_prenom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Prénom"
+        android:inputType="text" />
+
+    <!-- Spinner for Ville -->
+    <Spinner
+        android:id="@+id/spinner_ville"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- RadioGroup for Sexe (Homme/Femme) -->
+    <RadioGroup
+        android:id="@+id/radio_group_sexe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radio_homme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Homme" />
+
+        <RadioButton
+            android:id="@+id/radio_femme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Femme" />
+    </RadioGroup>
+
+    <!-- Save Button -->
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:layout_gravity="center" />
+
+</LinearLayout>
